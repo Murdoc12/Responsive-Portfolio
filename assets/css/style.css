@@ -35,13 +35,14 @@ float: right;
   /* display:inline-block; */
    border: 1px solid #cccccc;
    border-radius: 10px;
-   width: 1000px;
+   /* width: 960px; */
    height: 400px;
-   margin-left: 300px;
+   margin-left: 30px;
    margin-right: 50px;
    padding-top: 0px;
    padding-left: 30px;
-   padding-right: 30px;
+   padding-right: 10px;
+   
    padding-bottom: 30px;
    text-align: left;
    background-color: #4aaaa5;
@@ -51,19 +52,18 @@ float: right;
 .email
 {   
    
-  display:inline-block;
- border: 1px solid #cccccc;
+  /* display:inline-block; */
+ /* border: 1px solid #cccccc; */
    border-radius: 10px;
-   width: 400px;
-   height: 400px;
-   margin-left: 150px;
+   /* width: 400px;
+   height: 400px; */
+   margin-left: 30px;
    margin-right: 50px;
    padding-top: 0px;
    padding-left: 30px;
    padding-right: 30px;
-   padding-bottom: 30px;
    text-align: left;
-   background-color: #4aaaa5;
+   /* background-color: #4aaaa5; */
 
 }
   
@@ -126,7 +126,22 @@ background-image: url ("assets/images/funky-lines.png");
     width: 960px;
     background: #ffffff;
     margin: 0 auto;
-    background: none;
+    /* background: none; */
+    /* display:inline-block; */
+   border: 1px solid #cccccc;
+   border-radius: 10px;
+   /* width: 960px; */
+   height: 400px;
+   margin-left: 15px;
+   margin-right: 50px;
+   padding-top: 0px;
+   padding-left: 30px;
+   padding-right: 10px;
+   
+   padding-bottom: 30px;
+   text-align: left;
+   background-color: #4aaaa5;
+
 
 }
 
@@ -134,76 +149,52 @@ background-image: url ("assets/images/funky-lines.png");
 {
     float: left;
     width: 620px;
-    border: 0px solid #dddddd;
+    /* border: 0px solid #dddddd; */
     overflow: hidden;
     margin-bottom: 10px;
     
 }
 
-@media screen and (max-width: 768px) {
-    body {
-      background-color: #333;
+@media screen and (max-width: 960px)
+   { 
+
+      .p {font-size: 17px;}
+      #profile {max-width: 400px;}
+      body {background-color: red}
+      #body {width: 835px;}
+      #titlebar {width:440px}
+      #contactme {width:720px}
+      .email{width:720px}
+      .box{width:720px}
+      img {width:300px}
     }
-  
-    .wrapper {
-      /* Box-model */
-      width: 100%;
-      padding: 20px;
-    }
-  
-    #main-content,
-    #sidebar {
-      width: 100%;
-    }
-  
-    #sidebar {
-      margin-top: 40px;
-    }
-  }
-  
-  /* Additional Screen Sizes */
-  
-  /* Width at 320px and below */
-  @media screen and (max-width: 320px) {
-    body {
-      background-color: #333;
-    }
-  
-    .wrapper {
-      /* Box-model */
-      width: 100%;
-      padding: 20px;
-    }
-  
-    #main-content,
-    #sidebar {
-      width: 100%;
-    }
-  
-    #sidebar {
-      margin-top: 40px;
-    }
-  }
-  
-  /* Width at 168px and below */
-  @media screen and (max-width: 168px) {
-    body {
-      background-color: #333;
-    }
-  
-    .wrapper {
-      /* Box-model */
-      width: 100%;
-      padding: 20px;
-    }
-  
-    #main-content,
-    #sidebar {
-      width: 100%;
-    }
-  
-    #sidebar {
-      margin-top: 40px;
-    }
-  }
-  
+ 
+@media screen and (max-width: 768px)
+{ 
+
+   .p {font-size: 15px;}
+   #profile {max-width: 460px;}
+   body {background-color:blue;}
+   #body {width: 700px;}
+   #titlebar {width:438px}
+   #contactme {width:595px}
+   .email{ width:595px}
+   .box{width:595px}
+   img {width:200px}
+ }
+
+ @media screen and (max-width: 640px)
+ {
+ .p{font-size: 10px;}
+ #profile {max-width:460px;}
+ body {background-color: ghostwhite}
+ #body {width:500px;}
+ #titlebar {width:340px}
+ #contactme {width:400px}
+ .email{width:400px}
+ .box{Width:400px}
+ img {width:150px}
+
+ 
+ }
+
